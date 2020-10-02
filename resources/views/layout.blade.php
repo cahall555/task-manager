@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Introspect by TEMPLATED</title>
+		<title>Task Manager</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
@@ -20,6 +20,7 @@
 					<nav id="nav">
 						<a href="/">Home</a>
 						<a href="about">About</a>
+						<a href="tasks">Tasks</a>
 					</nav>
 				</div>
 			</header>

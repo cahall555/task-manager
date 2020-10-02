@@ -26,5 +26,7 @@ Route::get('/about', function () {
 });
 
 
-
-Route::get('/tasks/{task}', [TasksController::class,'show']); 
+Route::get('/tasks', [TasksController::class, 'index']);
+Route::post('/tasks', [TasksController::class,'store']);
+Route::get('/tasks/create', [TasksController::class,'create']);
+Route::get('/tasks/{task}', [TasksController::class,'show']);
