@@ -9,7 +9,7 @@
 		<title>Introspect by TEMPLATED</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
 	</head>
 	<body>
 
@@ -20,7 +20,6 @@
 					<nav id="nav">
 						<a href="/">Home</a>
 						<a href="about">About</a>
-						<a href="elements.html">Elements</a>
 					</nav>
 				</div>
 			</header>
@@ -50,7 +49,7 @@
 								<h3>Pellentesque adipis</h3>
 							</header>
 							<div class="image fit">
-								<img src="images/pic01.jpg" alt="" />
+								<img src="/images/pic01.jpg" alt="" />
 							</div>
 							<p>Cumsan mollis eros. Pellentesque a diam sit amet mi magna ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet lorem ipsum feugiat tempus.</p>
 						</div>
@@ -61,7 +60,7 @@
 								<h3>Morbi interdum mol</h3>
 							</header>
 							<div class="image fit">
-								<img src="images/pic02.jpg" alt="" />
+								<img src="/images/pic02.jpg" alt="" />
 							</div>
 							<p>Cumsan mollis eros. Pellentesque a diam sit amet mi magna ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet lorem ipsum feugiat tempus.</p>
 						</div>

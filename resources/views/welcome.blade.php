@@ -6,12 +6,12 @@
     <ul>
         @foreach ($tasks as $task)
             <li>
-                <h2>{{ $task->title }}</h2>
+                <h2>
+                <a href="/tasks/{{ $task->id }}">{{ $task->title }}</a>
+                </h2>
             </li>
         @endforeach
     </ul>
 		
-
-    <h3>something</h3>
 
 @endsection

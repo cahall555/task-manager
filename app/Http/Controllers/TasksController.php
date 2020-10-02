@@ -3,17 +3,15 @@
 namespace App\Http\Controllers;
 
 use DB;
-use App\Task;
+use App\Models\Task;
 
-class TasksController extends Controllers
+class TasksController extends Controller
 {
-    public function show($title)
+    public function show($id)
     {
-        $task = Task::where('title', $title)->firstOrFail();
+        $task = Task::find($id);
 
 
-        return view('task', [
-            'task' => $task
-        ]);
+        return view('tasks.show', ['task' => $task]);
     }
 }
