@@ -16,6 +16,13 @@
                     <input class="input" type="text" name="title" id="title">
                 </div>
             </div>
+            <div class="field">
+                <label class="label" for="description">Description</label>
+
+                <div class="control">
+                    <input class="input" type="text" name="description" id="description">
+                </div>
+            </div>
 
             <div class="field is-grouped">
                 <div class="control">

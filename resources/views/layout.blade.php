@@ -21,6 +21,7 @@
 						<a href="/">Home</a>
 						<a href="about">About</a>
 						<a href="tasks">Tasks</a>
+						<a href="tasks/create">Create</a>
 					</nav>
 				</div>
 			</header>

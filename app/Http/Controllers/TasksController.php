@@ -31,25 +31,41 @@ class TasksController extends Controller
     {
         $task = new Task();
 
-        $task->title = request('title');
+	$task->title = request('title');
+
+	$task->description = request('description');
 
         $task->save();
 
         return redirect('/tasks');
     }
 
-    public function edit()
+    public function update($id)
     {
+    	$task = Task::findOrFail($id);
 
+    	$task->title = request('title');
+    	$task->description = request('description');
+	$task->status = request('status');
+
+    	$task->save();
+
+    	return redirect('/tasks');
+    }
+    public function edit($id)
+    {
+    	$task = Task::findOrFail($id);
+    	return view('tasks.edit', compact('task'));
     }
 
-    public function update()
-    {
 
+    public function destroy($id)
+    {
+    	$task = Task::findOrFail($id);
+
+    	$task->delete();
+
+    	return redirect('/tasks');
     }
 
-    public function destroy()
-    {
-
-    }
 }
