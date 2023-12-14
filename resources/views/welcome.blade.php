@@ -10,7 +10,7 @@
 			@if($tasks->isEmpty())
     				<p>No tasks found.</p>
 			@else
-				<a href="/tasks/{{ $task->id }}">{{ $task->title }}</a>
+				<a href="/tasks/{{ $task->id }}">{{ $task->title }} {{ $task->status }} {{ $task->description }}</a>
 			@endif
                 </h2>
             </li>
