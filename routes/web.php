@@ -15,10 +15,15 @@ use App\Http\Controllers\TasksController;
  */
 
 Route::get('/', function () {
+    $tasks = App\Models\Task::latest();
 
-    return view('welcome', [
-        'tasks' => App\Models\Task::latest()->get()
-    ]);
+    if ($tasks->exists()) {
+        $tasks = $tasks->get();
+    } else {
+        $tasks = collect(); 
+    }
+
+    return view('welcome', ['tasks' => $tasks]);
 });
 
 Route::get('/about', function () {
