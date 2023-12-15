@@ -11,7 +11,12 @@
             <div class="flex flex-col sm:flex-row gap-4">
                 <label class="font-caveat text-2xl font-semibold" for="title">Title</label>
                 <input type="text" name="title" id="title" class="font-caveat text-xl rounded-xl w-3/5 text-violet bg-mint" value="{{ $task->title }}">
+	    </div>
+	   <div class="flex flex-col sm:flex-row gap-4">
+                <label class="font-caveat text-2xl font-semibold" for="priority">Priority</label>
+                <input type="integer" name="priority" id="priority" class="font-caveat text-xl rounded-xl w-3/5 text-violet bg-mint" value="{{ $task->priority }}">
             </div>
+
             <div class="flex flex-col sm:flex-row gap-4">
                 <label class="font-caveat text-2xl font-semibold" for="description">Description</label>
                 <textarea name="description" id="description" class="font-caveat text-xl rounded-xl w-3/5 text-violet bg-mint">{{ $task->description }}</textarea>
@@ -19,7 +24,11 @@
 
             <div class="flex flex-col sm:flex-row gap-4">
                 <label class="font-caveat text-2xl font-semibold" for="status">Status</label>
-                <input type="text" name="status" id="status" class="font-caveat text-xl rounded-xl w-3/5 text-violet bg-mint" value="{{ $task->status }}">
+		<select type="text" name="status" id="status" class="font-caveat text-xl rounded-xl w-3/5 text-violet bg-mint">
+<option value="Not Started" {{ $task->status == 'Not Started' ? 'selected' : '' }}>Not Started</option>
+        <option value="In Progress" {{ $task->status == 'In Progress' ? 'selected' : '' }}>In Progress</option>
+	<option value="Completed" {{ $task->status == 'Completed' ? 'selected' : '' }}>Completed</option>
+</select>
             </div>
             <div class="flex flex-col sm:flex-row gap-4">
             <div>
