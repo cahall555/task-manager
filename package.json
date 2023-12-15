@@ -6,6 +6,7 @@
         "serve": "vite preview"
     },
     "devDependencies": {
+        "@rollup/plugin-commonjs": "^25.0.7",
         "@shufo/prettier-plugin-blade": "^1.13.4",
         "@vitejs/plugin-vue": "^1.0.0",
         "autoprefixer": "^10.4.16",
@@ -17,16 +18,16 @@
         "vue": "^3.0.0",
         "vue-loader": "^16.0.0"
     },
-   "prettier": {
-  "plugins": ["@shufo/prettier-plugin-blade"],
-  "overrides": [
-    {
-      "files": ["*.blade.php"],
-      "options": {
-        "parser": "blade",
-        "tabWidth": 4
-      }
+    "prettier": {
+        "plugins": ["@shufo/prettier-plugin-blade"],
+        "overrides": [
+            {
+                "files": ["*.blade.php"],
+                "options": {
+                    "parser": "blade",
+                    "tabWidth": 4
+                }
+            }
+        ]
     }
-  ]
-}
 }

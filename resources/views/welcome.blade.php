@@ -10,9 +10,8 @@
         $colorIndex = 0;
     @endphp
 
-
-  
-    <ul>
+ 
+    <ul id="drag" draggable="true" ondragstart="onDragStart(event);">
         @foreach ($tasks as $task)
             <li>
 		<h2>
@@ -47,5 +46,4 @@
         @endforeach
     </ul>
 		
-
 @endsection

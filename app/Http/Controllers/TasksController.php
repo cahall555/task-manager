@@ -69,5 +69,17 @@ class TasksController extends Controller
 
     	return redirect('/');
     }
-
+   public function updatePriority(Request $request)
+   {   
+    DB::transaction(function () use ($request) {
+        foreach ($request->order as $index => $id) {    
+            $newPriority = $index + 1;                                         
+            $task = Task::find($id);
+            $task->priority = $newPriority;
+            $task->save();
+        } 
+    });
+        
+    return response()->json(['message' => 'Priorities updated']);
+    }
 }

@@ -38,4 +38,5 @@ Route::get('/tasks/{task}', [TasksController::class,'show']);
 Route::get('/task/{id}/edit', [TasksController::class, 'edit']);
 Route::put('/task/{id}', [TasksController::class, 'update']);
 Route::delete('/task/{id}', [TasksController::class, 'destroy']);
+Route::post('/update-priority', 'TaskController@updatePriority');
 
