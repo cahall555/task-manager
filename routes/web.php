@@ -30,7 +30,8 @@ Route::get('/about', function () {
     return view('about');
 });
 
-
+Route::get('/', [TasksController::class, 'index']);
+Route::get('/tasks', [TasksController::class,'index']);
 Route::post('/tasks', [TasksController::class,'store']);
 Route::get('/tasks/create', [TasksController::class,'create']);
 Route::get('/tasks/{task}', [TasksController::class,'show']);

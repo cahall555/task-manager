@@ -9,9 +9,9 @@ class TasksController extends Controller
 {
     public function index()
     {
-        $tasks = Task::latest()->get();
+        $tasks = Task::orderBy('priority', 'asc')->get();
 
-        return view('tasks.index', ['tasks' => $tasks ]);
+        return view('welcome', ['tasks' => $tasks]);
     }
     
     public function show($id)
@@ -34,6 +34,7 @@ class TasksController extends Controller
 	$task->title = request('title');
 
 	$task->description = request('description');
+	$task->priority = request('priority');
 
         $task->save();
 
@@ -47,6 +48,7 @@ class TasksController extends Controller
     	$task->title = request('title');
     	$task->description = request('description');
 	$task->status = request('status');
+	$task->priority = request('priority');
 
     	$task->save();
 

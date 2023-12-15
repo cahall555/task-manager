@@ -35,9 +35,10 @@
     		<h3 class="font-caveatbrush text-4xl"><a href="/tasks/{{ $task->id }}">{{ $task->title }}</a></h3>
     		<p class="font-caveatbrush text-2xl">{{ $task->status }}</p>
 	</div>
-    <p class="font-caveat text-lg">{{ $task->description }}</p>
-    <p class="font-caveat text-xl">{{ $task->created_at }}</p>
-    <p class="font-caveat text-xl">{{ $task->completed_at }}</p>
+    <p class="font-caveat text-xl"><strong>Priority:</strong> {{ $task->priority }}</p>
+    <p class="font-caveat text-xl"><strong>Description:</strong> {{ $task->description }}</p>
+    <p class="font-caveat text-xl"><strong>Created at:</strong> {{ $task->created_at }}</p>
+    <p class="font-caveat text-xl"><strong>Task Completed:</strong> {{ $task->completed_at }}</p>
 </div>
 
 			@endif

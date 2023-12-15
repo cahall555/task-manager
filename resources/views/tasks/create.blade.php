@@ -8,7 +8,14 @@
 
         <form class="flex flex-col gap-4 w-4/6 rounded-xl drop-shadow-2xl bg-turquoise text-blue p-8 mt-16" method="POST" action="/tasks">
             @csrf
-            
+            <div>
+                <label class="font-caveat text-2xl font-semibold" for="priority">Priority</label>
+
+                <div>
+                    <input class="font-caveat text-xl rounded-xl w-3/5 text-violet bg-mint" type="integer" name="priority" id="priority">
+                </div>
+            </div>
+
             <div>
                 <label class="font-caveat text-2xl font-semibold" for="title">Title</label>
 

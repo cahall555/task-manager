@@ -12,7 +12,6 @@ This application is configured with Laravel sail, which will allow the app and m
 #### Backlog
 
 * Create a mobile menu option
-* Update table schema to include dropdown for stats, due date, notes, etc.
 * Create checkbox to mark a task as complete.
-* Add set status to create task screen
 * Add various methods of sorting and organizing tasks.
+* Fix no task message

@@ -8,9 +8,10 @@
     		<h3 class="font-caveatbrush text-4xl">{{ $task->title }}</h3>
     		<p class="font-caveatbrush text-2xl">{{ $task->status }}</p>
 	</div>
-    <p class="font-caveat text-lg">{{ $task->description }}</p>
-    <p class="font-caveat text-xl">{{ $task->created_at }}</p>
-    <p class="font-caveat text-xl">{{ $task->completed_at }}</p>
+    <p class="font-caveat text-xl"><strong>Priority:</strong> {{ $task->priority }}</p>
+    <p class="font-caveat text-xl"><strong>Description:</strong> {{ $task->description }}</p>
+    <p class="font-caveat text-xl"><strong>Created at:</strong> {{ $task->created_at }}</p>
+    <p class="font-caveat text-xl"><strong>Task Completed:</strong> {{ $task->completed_at }}</p>
 </div>
 <div class="flex flex-col sm:flex-row sm:justify-items-start gap-4 mt-16">
 <a href="/task/{{ $task->id }}/edit" class="bg-red text-violet font-caveat text-2xl font-semibold py-4 px-8 rounded-full">Update</a>
