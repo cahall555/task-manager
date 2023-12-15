@@ -37,7 +37,7 @@ class TasksController extends Controller
 
         $task->save();
 
-        return redirect('/tasks');
+        return redirect('/');
     }
 
     public function update($id)
@@ -50,7 +50,7 @@ class TasksController extends Controller
 
     	$task->save();
 
-    	return redirect('/tasks');
+    	return redirect('/');
     }
     public function edit($id)
     {
@@ -65,7 +65,7 @@ class TasksController extends Controller
 
     	$task->delete();
 
-    	return redirect('/tasks');
+    	return redirect('/');
     }
 
 }
