@@ -8,3 +8,11 @@ This application is configured with Laravel sail, which will allow the app and m
      * Note: `alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'` creates an alias so this command can be run as `sail up`
 * Once the container is running run `./vendor/bin/sail artisan migrate` to create the tasks table.
 * Use `./vendor/bin/sail stop` if running in up -d (detached mode) otherwise ctrl + c will stop the container.
+
+#### Backlog
+
+* Create a mobile menu option
+* Update table schema to include dropdown for stats, due date, notes, etc.
+* Create checkbox to mark a task as complete.
+* Add set status to create task screen
+* Add various methods of sorting and organizing tasks.
